@@ -567,9 +567,11 @@ section {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .about-img {
-  min-height: 500px;
-}
+.about-img {
+    height: 400px; /* Ajustez la hauteur souhaitée */
+    width: 50%; /* Utilisez 100% pour occuper toute la largeur de la colonne */
+  }
+
 
 .about h3 {
   font-weight: 700;
@@ -707,7 +709,7 @@ section {
 --------------------------------------------------------------*/
 .why-us .why-box {
   padding: 30px;
-  background: var(--color-primary);
+  background: #826f59;
   color: #fff;
 }
 
@@ -785,7 +787,7 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stats-bg.jfif") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bac.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -922,7 +924,7 @@ section {
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .testimonials .testimonials-carousel,
@@ -1007,6 +1009,64 @@ section {
 --------------------------------------------------------------*/
 .events .container-fluid {
   padding: 0;
+}
+.hero_img {
+    background: url(../img/hero-im.jpg) no-repeat center bottom;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Utilisez rgba pour spécifier l'opacité */
+
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.3); /* Définissez la couleur et l'opacité ici */
+    padding: 20px; /* Ajoutez un peu de remplissage pour mieux voir l'effet */
+    text-align: center;
+    padding-top: 7%;
+    font-size: 46px;
+    box-shadow: #f4f6f9;
+}
+
+.cards {
+    /* Styles pour le texte à l'intérieur du cadre */
+    color: #000; /* Couleur du texte */
+}
+
+/* Ajoutez le reste de votre CSS ici */
+
+.dym {
+    font-weight: 800;
+    font-size: 150%;
+    color: #fff; /* Couleur blanche */
+}
+
+/* Animation du h4 */
+.cards h4 {
+    animation: bounceInUp 8s ease-in-out;
+     color: #fff; /* Couleur blanche */
+}
+
+@keyframes bounceInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-30%);
+        opacity: 0.8;
+
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+p{
+    color:white;
+}
+.card {
+    width: 100%; /* You can adjust this value based on your layout */
+    height: 300px; /* Set the desired height for the cards div */
 }
 
 .events .event-item {
